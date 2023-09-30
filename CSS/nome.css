@@ -9,7 +9,7 @@
 
 body {
   margin: 0;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #82b8ede3;
 }
 
@@ -144,53 +144,6 @@ body {
   }
 }
 
-footer {
-  align-items: end;
-  background-color: #82edb9e3;
-  /* Cor de fundo do footer */
-  color: rgb(102, 95, 88);
-  /* Cor do texto no footer */
-  padding: 20px 0;
-  /* Espaçamento interno no footer */
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  /* Altera a direção para linha */
-  align-items: center;
-  justify-content: center;
-  /* Centraliza horizontalmente os elementos */
-  gap: 10px;
-  /* Espaçamento entre os elementos */
-}
-
-.footer-links a img {
-  width: 50px;
-  /* Ajuste o tamanho das imagens conforme necessário */
-  height: auto;
-  /* Altura automática para manter a proporção */
-  position: relative;
-  /* Permite posicionar o texto sobre as imagens */
-}
-
-/* Ajuste a aparência dos links quando passar o mouse */
-.footer-links a:hover {
-  color: #fd9ce1e3;
-  /* Cor de destaque ao passar o mouse */
-}
-
 .fperfil {
   width: 320px;
   height: 420px;
@@ -220,7 +173,7 @@ h2 {
   text-align: justify;
   margin-top: 70px;
   margin-left: 45px;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .sm {
@@ -240,7 +193,7 @@ h2 {
 .cus {
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family:Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif
 }
 
 .cord1 {
@@ -263,19 +216,17 @@ h2 {
   text-align: center;
   justify-content: center;
   margin: 10px 25px 0;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   animation: slideDown 1s ease-in;
 }
 
 @keyframes slideDown {
   from {
-    /*Valores de inicio do elemento que possuir esta animação.*/
     opacity: 0;
     max-height: 0;
   }
 
   to {
-    /* Valores de termino do elemento que possuir esta animação. */
     opacity: 1;
     max-height: 200px;
   }
@@ -303,59 +254,39 @@ a {
 }
 
 
+footer {
+  align-items: end;
+  background-color: #82edb9e3;
+  color: rgb(102, 95, 88);
+  padding: 20px 0;
+}
 
-@media screen and (max-width: 768px) {
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
 
-  header img {
-    display: none;
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 
-  }
-
-  main div img {
-    width: 90%;
-    /* Use 100% da largura da tela */
-    height: auto;
-    margin: auto;
-    /* Centralize a imagem horizontalmente */
-    margin-bottom: 5%;
-  }
-
-  .informacoes {
-    flex-direction: column;
-    /* Alinhe os elementos verticalmente */
-    text-align: center;
-    /* Centralize o texto */
-    gap: 10px;
-    /* Reduza o espaçamento entre elementos */
-  }
-
-  h1 {
-    margin: 15px;
-    /* Reduza a margem superior */
-  }
-
-  .texto {
-    margin-top: 20px;
-    /* Ajuste a margem superior */
-    margin-left: 15px;
-    /* Ajuste a margem esquerda */
-    margin: 30px;
-  }
-
-  .sm {
-    text-align: center;
-    /* Centralize o texto */
-    margin-top: 10px;
-  }
-
-  .logos {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 30px;
-    width: 40px;
-    margin-left: 10%;
-  }
+.footer-links a img {
+  width: 50px;
+  height: auto;
+  position: relative;
+}
+.footer-links a:hover {
+  color: #fd9ce1e3;
 }
 
 .atividades {
@@ -393,15 +324,18 @@ a {
   margin-bottom: 6%;
 
 }
-.content2{
+
+.content2 {
   font-family: 'Playfair Display', serif;
   margin-bottom: 16%;
 }
-main{
+
+main {
   padding-top: 80px;
   margin-left: 15%;
   margin-right: 15%;
 }
+
 button {
   font-family: 'Playfair Display', serif;
   padding: 5px 20px;
@@ -434,4 +368,54 @@ input {
   font-size: 1.5em;
   font-weight: bold;
   padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+  header img {
+    display: none;
+
+  }
+
+  main div img {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+
+  .informacoes {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  h1 {
+    margin: 15px;
+  }
+
+  .texto {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin: 30px;
+  }
+
+  .sm {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+    width: 40px;
+    margin-left: 10%;
+  }
+
+  .header .menu {
+    height: 1000px;
+    overflow-y: scroll;
+  }
 }
