@@ -285,6 +285,7 @@ footer {
   height: auto;
   position: relative;
 }
+
 .footer-links a:hover {
   color: #fd9ce1e3;
 }
@@ -345,7 +346,7 @@ button {
   margin: 15px 0;
 }
 
-form {
+.form {
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./IMG/gato.png">
-    <link rel="stylesheet" href="./CSS/nome.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 
     <title> Portfólio - Luis </title>
 </head>
@@ -29,10 +29,10 @@
 
             <p class="atv1">Ao digitar o seu nome e clicar no botão, deverá aparecer uma mensagem de boas vindas.</p>
 
-            <form action="#">
-                <input type="text" placeholder="Informe o seu nome" id="input-nome">
+
+            <div class="form"><input type="text" placeholder="Informe o seu nome" id="input-nome">
                 <button onclick="mostraNome()">OK</button>
-            </form>
+            </div>
         </div>
 
         <p id="span-nome"></p>
@@ -67,7 +67,7 @@
             const nome = document.getElementById('input-nome').value;
             const span = document.getElementById('span-nome');
 
-            span.innerText = `Seja bem vindo(a), ${nome}`;
+            span.innerText = `Seja bem vinde, ${nome}`;
         }
     </script>
 </body>
